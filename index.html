@@ -8,16 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    /* ═══════════════════════════════════════════════
-       THEME VARIABLES — edit these to restyle the site
-       ═══════════════════════════════════════════════ */
     :root {
       --burgundy:   #5e121f;
       --ivory:      #e9e9e9;
       --aquamarine: #479499;
       --ebony:      #36302d;
       --white:      #ffffff;
-      --text-main:  #36302d;   /* ebony */
+      --text-main:  #36302d;
       --text-muted: #7a736e;
       --border:     #e0dcda;
       --nav-height: 68px;
@@ -26,9 +23,6 @@
       --font-body:    'DM Sans', sans-serif;
     }
 
-    /* ═══════════════════════════════════════════════
-       RESET & BASE
-       ═══════════════════════════════════════════════ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -42,9 +36,6 @@
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    /* ═══════════════════════════════════════════════
-       NAV
-       ═══════════════════════════════════════════════ */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -96,7 +87,6 @@
     .nav-links a:hover { color: var(--burgundy); }
     .nav-links a:hover::after { width: 100%; }
 
-    /* Mobile hamburger */
     .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
     .nav-toggle span {
       display: block; width: 22px; height: 1.5px;
@@ -127,9 +117,6 @@
     }
     .nav-mobile a:last-child { border-bottom: none; }
 
-    /* ═══════════════════════════════════════════════
-       LAYOUT HELPERS
-       ═══════════════════════════════════════════════ */
     .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -167,9 +154,6 @@
       margin: 1.5rem 0 3rem;
     }
 
-    /* ═══════════════════════════════════════════════
-       HERO
-       ═══════════════════════════════════════════════ */
     #home {
       padding-top: calc(var(--nav-height) + 6rem);
       padding-bottom: 6rem;
@@ -257,7 +241,6 @@
       letter-spacing: -0.02em;
     }
 
-    /* Skills tags */
     .skills-row {
       display: flex;
       flex-wrap: wrap;
@@ -274,9 +257,6 @@
       background: var(--white);
     }
 
-    /* ═══════════════════════════════════════════════
-       PROJECTS
-       ═══════════════════════════════════════════════ */
     #projects { background: var(--ivory); }
 
     .filter-row {
@@ -371,9 +351,6 @@
     }
     .project-link:hover { gap: 0.7rem; }
 
-    /* ═══════════════════════════════════════════════
-       PROFESSIONAL DEVELOPMENT
-       ═══════════════════════════════════════════════ */
     #professional { background: var(--white); }
 
     .pd-grid {
@@ -461,9 +438,6 @@
       color: var(--text-muted);
     }
 
-    /* ═══════════════════════════════════════════════
-       TIMELINE
-       ═══════════════════════════════════════════════ */
     #timeline { background: var(--ivory); }
 
     .timeline-year {
@@ -553,9 +527,6 @@
       border: 1px solid var(--border);
     }
 
-    /* ═══════════════════════════════════════════════
-       FOOTER / CONTACT
-       ═══════════════════════════════════════════════ */
     footer {
       background: var(--ebony);
       color: var(--white);
@@ -618,9 +589,6 @@
       color: rgba(255,255,255,0.3);
     }
 
-    /* ═══════════════════════════════════════════════
-       RESPONSIVE
-       ═══════════════════════════════════════════════ */
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .nav-toggle { display: block; }
@@ -632,7 +600,6 @@
       section { padding: 5rem 0 4rem; }
     }
 
-    /* Fade-in animation on scroll */
     .fade-in {
       opacity: 0;
       transform: translateY(18px);
@@ -646,7 +613,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="nav-inner">
       <div class="nav-logo">Alreem Alkaabi</div>
@@ -663,7 +629,6 @@
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="nav-mobile" id="navMobile">
     <a href="#home" onclick="closeMenu()">Home</a>
     <a href="#projects" onclick="closeMenu()">Projects</a>
@@ -672,7 +637,6 @@
     <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 
-  <!-- HOME -->
   <section id="home">
     <div class="container">
       <div class="hero-grid">
@@ -705,7 +669,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
       <p class="section-label fade-in">Selected Work</p>
@@ -720,7 +683,6 @@
       </div>
 
       <div class="projects-grid" id="projectsGrid">
-        <!-- Card 1 -->
         <div class="project-card fade-in" data-category="python ai">
           <div class="project-accent"></div>
           <h3 class="project-title">Transportation Access Classifier</h3>
@@ -738,7 +700,6 @@
           </a>
         </div>
 
-        <!-- Card 2 -->
         <div class="project-card fade-in" data-category="web">
           <div class="project-accent"></div>
           <h3 class="project-title">Lost and Found Website</h3>
@@ -753,7 +714,6 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="project-card fade-in" data-category="python ai">
           <div class="project-accent"></div>
           <h3 class="project-title">Sequence Labeling: POS & NER</h3>
@@ -771,7 +731,6 @@
           </a>
         </div>
 
-        <!-- Card 4 -->
         <div class="project-card fade-in" data-category="python ai">
           <div class="project-accent"></div>
           <h3 class="project-title">Arabic Sign Language Recognition</h3>
@@ -793,7 +752,6 @@
     </div>
   </section>
 
-  <!-- PROFESSIONAL DEVELOPMENT -->
   <section id="professional">
     <div class="container">
       <p class="section-label fade-in">Growth & Credentials</p>
@@ -801,7 +759,6 @@
       <div class="divider fade-in"></div>
 
       <div class="pd-grid">
-        <!-- Certifications -->
         <div class="fade-in">
           <p class="pd-group-title">Certifications</p>
 
@@ -812,7 +769,7 @@
           </div>
 
           <div class="cert-item">
-            <div class="cert-name">CFA Level I Candidate - May 2026</div>
+            <div class="cert-name">CFA Level I Candidate - August 2026</div>
             <div class="cert-issuer">CFA Institute</div>
             <span class="cert-status">In Progress</span>
           </div>
@@ -830,13 +787,12 @@
           </div>
 
           <div class="cert-item">
-            <div class="cert-name">FRM Part I Candidate - Augest 2026</div>
-            <div class="cert-issuer"> Global Association of Risk Professionals (GARP)</div>
+            <div class="cert-name">FRM Part I Candidate - August 2026</div>
+            <div class="cert-issuer">Global Association of Risk Professionals (GARP)</div>
             <span class="cert-status">In Progress</span>
           </div>
         </div>
 
-        <!-- Extracurriculars -->
         <div class="fade-in">
           <p class="pd-group-title">Extracurricular Activities</p>
 
@@ -862,29 +818,18 @@
             </div>
           </div>
 
-          <div class="activity-item">
-            <div class="activity-header">
-              <div class="activity-name">I2P</div>
-              <div class="activity-date">March 2024 – May 2025</div>
-            </div>
-            <div class="activity-role">Participant</div>
-            <div class="activity-desc">
-              Currently working on developing my startup idea. Through the Idea-to-Prototype business incubator program by UAEU Science and Innovation Park.
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TIMELINE -->
   <section id="timeline">
     <div class="container">
       <p class="section-label fade-in">Academic Journey</p>
       <h2 class="section-title fade-in">PDT Timeline</h2>
       <div class="divider fade-in"></div>
 
-      <!-- Year 3 -->
       <div class="timeline-year fade-in">
         <div class="timeline-year-header">
           <div class="year-badge y3">Y3</div>
@@ -897,13 +842,28 @@
           <div class="timeline-item">
             <div class="tl-title">CFA Level 1 Exam</div>
             <div class="tl-org">CFA Institute</div>
-            <div class="tl-date">May 2026 Candidate</div>
-            <div class="tl-desc">Preparing for my attempt at the CFA Level 1 examination scheduled for May 2026.</div>
+            <div class="tl-date">August 2026 Candidate</div>
+            <div class="tl-desc">Preparing for my attempt at the CFA Level 1 examination scheduled for August 2026.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">e& Internship</div>
+            <div class="tl-org">e& (Etisalat)</div>
+            <div class="tl-date">June – August 2026</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">Game Development Program</div>
+            <div class="tl-org">Endless Studios</div>
+            <div class="tl-date">June – October 2026</div>
+            <div class="tl-desc">Selected participant in a fully funded Game Development Program by Endless Studios, supported by Khalifa Fund — gaining hands-on experience in game design and development.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">FRM Part I Exam</div>
+            <div class="tl-org">Global Association of Risk Professionals (GARP)</div>
+            <div class="tl-date">August 2026 Candidate</div>
           </div>
         </div>
       </div>
 
-      <!-- Year 2 -->
       <div class="timeline-year fade-in">
         <div class="timeline-year-header">
           <div class="year-badge y2">Y2</div>
@@ -934,7 +894,6 @@
         </div>
       </div>
 
-      <!-- Year 1 -->
       <div class="timeline-year fade-in">
         <div class="timeline-year-header">
           <div class="year-badge y1">Y1</div>
@@ -953,7 +912,6 @@
     </div>
   </section>
 
-  <!-- CONTACT / FOOTER -->
   <footer id="contact">
     <div class="footer-inner">
       <div class="footer-left">
@@ -976,12 +934,12 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 Alreem A. Alkaabi 
+      Alreem A. Alkaabi 
+      Last updated: 6/15/2026 
     </div>
   </footer>
 
   <script>
-    // ── Mobile menu ──────────────────────────────────────
     const navToggle = document.getElementById('navToggle');
     const navMobile = document.getElementById('navMobile');
     navToggle.addEventListener('click', () => {
@@ -993,7 +951,6 @@
       navMobile.classList.remove('open');
     }
 
-    // ── Project filter ────────────────────────────────────
     function filterProjects(cat, btn) {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
@@ -1003,7 +960,6 @@
       });
     }
 
-    // ── Fade-in on scroll ─────────────────────────────────
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -1014,7 +970,6 @@
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // ── Active nav link on scroll ─────────────────────────
     const sections = document.querySelectorAll('section[id], footer[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
     window.addEventListener('scroll', () => {
