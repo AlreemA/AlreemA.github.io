@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Alreem Alkaabi</title>
+<meta name="description" content="Selected projects by Alreem Alkaabi, including AI, computer vision, NLP, and full-stack web development work.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Alreem Alkaabi</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html" class="current">Projects</a></li>
+      <li class="has-dropdown" tabindex="0">
+        <button class="nav-drop-trigger">Experiences <span class="nav-caret">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="work-experience.html">Work Experience</a>
+          <a href="extracurricular.html">Extracurricular Activities</a>
+          <a href="professional-development.html">Professional Development</a>
+        </div>
+      </li>
+      <li><a href="about.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="projects.html">Projects</a>
+  <div class="nav-mobile-label">Experiences</div>
+  <div class="nav-mobile-sub">
+    <a href="work-experience.html">Work Experience</a>
+    <a href="extracurricular.html">Extracurricular Activities</a>
+    <a href="professional-development.html">Professional Development</a>
+  </div>
+  <a href="about.html#contact">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label fade-in">Selected Work</p>
+    <h2 class="section-title fade-in">Projects</h2>
+    <p class="section-subtitle fade-in">Academic and independent builds across AI, computer vision, NLP, and full-stack development.</p>
+    <div class="divider fade-in"></div>
+
+    <div class="filter-row fade-in">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
+      <button class="filter-btn" onclick="filterProjects('python', this)">Python</button>
+      <button class="filter-btn" onclick="filterProjects('ai', this)">AI</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card fade-in" data-category="python ai">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Transportation Access Classifier</h3>
+        <p class="project-desc">Built a CNN using TensorFlow and Keras to classify vehicle images by type. Applied data preprocessing, model evaluation, and visualization techniques.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Computer Vision</span>
+          <span class="project-tag">Keras</span>
+        </div>
+        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/Transportation%20access%20classification%20-%20202307361.pptx" target="_blank" rel="noopener">Project Slides →</a>
+      </div>
+
+      <div class="project-card fade-in" data-category="web">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Lost and Found Website</h3>
+        <p class="project-desc">Developed a full-stack web application with JSP, Servlets, and JDBC connected to a MySQL database for managing lost and found items.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML / CSS</span>
+          <span class="project-tag">Java</span>
+          <span class="project-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="python ai">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Sequence Labeling: POS & NER</h3>
+        <p class="project-desc">Implemented part-of-speech tagging and named entity recognition using machine learning techniques for contextual text annotation.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Machine Learning</span>
+        </div>
+        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/NLP_51_G10_Project_1%20(1).pdf" target="_blank" rel="noopener">Project Report →</a>
+      </div>
+
+      <div class="project-card fade-in" data-category="python ai">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Arabic Sign Language Recognition</h3>
+        <p class="project-desc">Evaluated a custom CNN alongside pre-trained ResNet50 and MobileNetV3 models, achieving 95.24% validation accuracy. Deployed via Streamlit Cloud with interactive demos to aid sign learning.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Computer Vision</span>
+          <span class="project-tag">Streamlit</span>
+        </div>
+        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/Arabic%20Sign%20Langauge.pdf" target="_blank" rel="noopener">Report →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <h2>Let's<br><em>connect.</em></h2>
+      <p>Always open to new opportunities, collaborations, and conversations.</p>
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.linkedin.com/in/alreem-alkaabi-2a18521ba/" target="_blank" rel="noopener">↗ LinkedIn</a>
+      <a class="footer-link" href="https://github.com/AlreemA" target="_blank" rel="noopener">↗ GitHub</a>
+      <a class="footer-link" href="mailto:alreemalkaabi5@gmail.com">↗ Personal Email</a>
+      <a class="footer-link" href="mailto:202307361@uaeu.ac.ae">↗ Academic Email</a>
+    </div>
+  </div>
+  <div class="footer-bottom">Alreem A. Alkaabi · Last updated: 6/30/2026</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
