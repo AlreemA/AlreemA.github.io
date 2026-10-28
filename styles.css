@@ -419,3 +419,12 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 
 .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .fade-in.visible { opacity: 1; transform: none; }
+
+/* Work experience descriptions and upcoming reports */
+.work-entry-card { grid-template-columns: minmax(0, 1fr) 260px; align-items: start; }
+.report-placeholder { padding: 1.5rem; border: 1px dashed var(--aquamarine); background: var(--ivory); }
+.report-placeholder h4 { font-family: var(--font-display); color: var(--burgundy); font-size: 1.15rem; margin-bottom: 0.75rem; }
+.report-placeholder p { font-size: 0.88rem; line-height: 1.65; color: var(--text-muted); }
+@media (max-width: 700px) {
+  .work-entry-card { grid-template-columns: minmax(0, 1fr); }
+}

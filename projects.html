@@ -48,7 +48,7 @@
   <div class="container">
     <p class="section-label fade-in">Selected Work</p>
     <h2 class="section-title fade-in">Projects</h2>
-    <p class="section-subtitle fade-in">Academic and independent builds across AI, computer vision, NLP, and full-stack development.</p>
+    <p class="section-subtitle fade-in">Academic and independent projects across AI, computer vision, NLP, simulation, data visualization, and full-stack development.</p>
     <div class="divider fade-in"></div>
 
     <div class="filter-row fade-in">
@@ -56,6 +56,8 @@
       <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
       <button class="filter-btn" onclick="filterProjects('python', this)">Python</button>
       <button class="filter-btn" onclick="filterProjects('ai', this)">AI</button>
+      <button class="filter-btn" onclick="filterProjects('simulation', this)">Simulation</button>
+      <button class="filter-btn" onclick="filterProjects('data', this)">Data Visualization</button>
     </div>
 
     <div class="projects-grid" id="projectsGrid">
@@ -68,7 +70,6 @@
           <span class="project-tag">Computer Vision</span>
           <span class="project-tag">Keras</span>
         </div>
-        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/Transportation%20access%20classification%20-%20202307361.pptx" target="_blank" rel="noopener">Project Slides →</a>
       </div>
 
       <div class="project-card fade-in" data-category="web">
@@ -91,7 +92,6 @@
           <span class="project-tag">NLP</span>
           <span class="project-tag">Machine Learning</span>
         </div>
-        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/NLP_51_G10_Project_1%20(1).pdf" target="_blank" rel="noopener">Project Report →</a>
       </div>
 
       <div class="project-card fade-in" data-category="python ai">
@@ -103,52 +103,41 @@
           <span class="project-tag">Computer Vision</span>
           <span class="project-tag">Streamlit</span>
         </div>
-        <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/Arabic%20Sign%20Langauge.pdf" target="_blank" rel="noopener">Report →</a>
       </div>
 
-      <div class="project-card fade-in" data-category="ai python">
-  <div class="project-accent"></div>
-  <h3 class="project-title">Hydro AI</h3>
-  <p class="project-desc">
-    HydroAI is an AI-powered Farm-as-a-Service platform that enables users to design, deploy, monitor, and manage hydroponic farms through an intuitive digital interface, making smart farming accessible without prior agricultural expertise.
-  </p>
-  <div class="project-tags">
-    <span class="project-tag">AI</span>
-    <span class="project-tag">Python</span>
-  </div>
-  <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/HydroAI.pdf" target="_blank" rel="noopener">Pitch Deck →</a>
-</div>
+      <div class="project-card fade-in" data-category="simulation python">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Procedural N-body Solar System Simulation</h3>
+        <p class="project-desc">Developed an N-body orbital simulation with stable planetary orbits, asteroid belts, cinematic camera movement, and Python-based procedural planet generation.</p>
+        <div class="project-tags">
+          <span class="project-tag">Unity</span>
+          <span class="project-tag">C#</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
 
-<div class="project-card fade-in" data-category="other">
-  <div class="project-accent"></div>
-  <h3 class="project-title">Procedural Solar System Simulation</h3>
-  <p class="project-desc">
-    Developed a Unity/C# N-body orbital simulation with stable planetary orbits, asteroid belts,
-    cinematic camera movement, and Python-based procedural planet generation.
-  </p>
-  <div class="project-tags">
-    <span class="project-tag">Unity</span>
-    <span class="project-tag">C#</span>
-    <span class="project-tag">Python</span>
-  </div>
-  <a class="project-link" href="https://github.com/AlreemA/Projects/blob/main/Smart_Computer_Graphics_Project_Report%20(1).pdf" target="_blank" rel="noopener">Report →</a>
-</div>
+      <div class="project-card fade-in" data-category="python data">
+        <div class="project-accent"></div>
+        <h3 class="project-title">Global CO₂ Emissions Interactive Dashboard</h3>
+        <p class="project-desc">Built an interactive dashboard to visualize global CO₂ trends through animated charts, maps, heatmaps, 3D plots, and fuel-source analysis.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Streamlit</span>
+          <span class="project-tag">pandas</span>
+          <span class="project-tag">Plotly</span>
+        </div>
+      </div>
 
-<div class="project-card fade-in" data-category="python ai">
-  <div class="project-accent"></div>
-  <h3 class="project-title">Global CO2 Emissions Interactive Dashboard</h3>
-  <p class="project-desc">
-    Built an interactive Python Streamlit dashboard using Pandas and Plotly to visualize global
-    CO₂ trends through animated charts, maps, heatmaps, 3D plots, and fuel-source analysis.
-  </p>
-  <div class="project-tags">
-    <span class="project-tag">Python</span>
-    <span class="project-tag">Streamlit</span>
-    <span class="project-tag">Plotly</span>
-    <span class="project-tag">Pandas</span>
-  </div>
-  <a class="project-link" href="YOUR_SOURCE_FILE_LINK_HERE" target="_blank" rel="noopener">Source File →</a>
-</div>
+      <div class="project-card fade-in" data-category="ai">
+        <div class="project-accent"></div>
+        <h3 class="project-title">HydroAI</h3>
+        <p class="project-desc">Developed an AI-powered Farm-as-a-Service platform that enables users to design, deploy, monitor, and manage hydroponic farms with minimal technical expertise. Awarded 2nd place at the ADIA Lab x 42 Abu Dhabi Discovery Piscine AI Hackathon in June 2026.</p>
+        <div class="project-tags">
+          <span class="project-tag">AI</span>
+          <span class="project-tag">Hydroponics</span>
+          <span class="project-tag">Hackathon</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -166,7 +155,7 @@
       <a class="footer-link" href="mailto:202307361@uaeu.ac.ae">↗ Academic Email</a>
     </div>
   </div>
-  <div class="footer-bottom">Alreem A. Alkaabi · Last updated: 6/30/2026</div>
+  <div class="footer-bottom">Alreem A. Alkaabi · Last updated: 28 October 2026</div>
 </footer>
 
 <script src="script.js"></script>
