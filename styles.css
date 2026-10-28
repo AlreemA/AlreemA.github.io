@@ -421,7 +421,10 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 .fade-in.visible { opacity: 1; transform: none; }
 
 /* Work experience descriptions and upcoming reports */
-.work-entry-card { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+.work-entry-card { display: block; padding: 3rem 0; border-bottom: 1px solid var(--border); }
+.work-entry-card:first-child { padding-top: 0; }
+.work-entry-card:last-child { border-bottom: none; }
+.work-entry-card > .report-placeholder { margin-top: 1.5rem; }
 .report-placeholder { padding: 1.5rem; border: 1px dashed var(--aquamarine); background: var(--ivory); }
 .report-placeholder h4 { font-family: var(--font-display); color: var(--burgundy); font-size: 1.15rem; margin-bottom: 0.75rem; }
 .report-placeholder p { font-size: 0.88rem; line-height: 1.65; color: var(--text-muted); }
