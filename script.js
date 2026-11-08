@@ -5,11 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', () => {
       navToggle.classList.toggle('open');
       navMobile.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(navMobile.classList.contains('open')));
+      navToggle.setAttribute('aria-label', navMobile.classList.contains('open') ? 'Close menu' : 'Open menu');
     });
     navMobile.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         navToggle.classList.remove('open');
         navMobile.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open menu');
       });
     });
   }
