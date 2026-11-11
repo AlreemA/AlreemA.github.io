@@ -476,3 +476,10 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
   .course-table td, .course-table td:last-child { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 0.5rem; padding: 0.25rem 0; border: none; width: auto; white-space: normal; }
   .course-table td::before { content: attr(data-label); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 500; padding-top: 0.15rem; }
 }
+
+/* Huawei reflection */
+.report-essay { margin-top: 1.5rem; padding: 2rem; background: #f7f3ed; border: 1px solid var(--border); }
+.report-essay h4 { margin-bottom: 1.25rem; }
+.report-essay p { max-width: 78ch; font-size: 0.92rem; line-height: 1.8; }
+.report-essay p + p { margin-top: 1rem; }
+@media (max-width: 650px) { .report-essay { padding: 1.25rem; } }
