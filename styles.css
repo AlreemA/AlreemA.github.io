@@ -483,3 +483,5 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 .report-essay p { max-width: 68ch; margin-left: 0; margin-right: 0; font-size: 0.92rem; line-height: 1.8; color: #292929; }
 .report-essay p + p { margin-top: 1rem; }
 @media (max-width: 650px) { .report-essay { padding: 1.25rem; } }
+.experience-bullets { padding-left: 1.25rem; font-size: 0.92rem; color: var(--text-muted); line-height: 1.75; list-style: disc; }
+.experience-bullets li + li { margin-top: 0.75rem; }
