@@ -485,8 +485,3 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 @media (max-width: 650px) { .report-essay { padding: 1.25rem; } }
 .experience-bullets { padding-left: 1.25rem; font-size: 0.92rem; color: var(--text-muted); line-height: 1.75; list-style: disc; }
 .experience-bullets li + li { margin-top: 0.75rem; }
-.section-jump-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
-.section-jump-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.55rem 1rem; border: 1px solid var(--burgundy); color: var(--burgundy); font-size: 0.85rem; }
-.section-jump-links a:hover { background: var(--burgundy); color: var(--white); }
-.section-jump-links a:focus-visible { outline: 2px solid var(--aquamarine); outline-offset: 3px; }
-.work-entry-card[id] { scroll-margin-top: calc(var(--nav-height) + 1.5rem); }
