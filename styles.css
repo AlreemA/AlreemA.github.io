@@ -480,6 +480,6 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 /* Huawei reflection */
 .report-essay { margin-top: 1.5rem; padding: 2.5rem 2rem; background: #fafaf8; border: 1px solid var(--border); }
 .report-essay h4 { margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.4; color: var(--burgundy); text-align: left; }
-.report-essay p { max-width: 68ch; margin-left: auto; margin-right: auto; font-size: 0.92rem; line-height: 1.8; color: #292929; }
+.report-essay p { max-width: 68ch; margin-left: 0; margin-right: 0; font-size: 0.92rem; line-height: 1.8; color: #292929; }
 .report-essay p + p { margin-top: 1rem; }
 @media (max-width: 650px) { .report-essay { padding: 1.25rem; } }
