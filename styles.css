@@ -479,6 +479,7 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 
 /* Huawei reflection */
 .hero-grid.hero-text-only { grid-template-columns: minmax(0, 1fr); }
+.hero-text-only .hero-name { margin-bottom: 2.5rem; }
 .hero-text-only .hero-desc { max-width: 680px; }
 .entry-photo.club-logo { aspect-ratio: 1; }
 .club-logo img { object-fit: contain; }
@@ -505,8 +506,8 @@ footer { background: var(--ebony); color: var(--white); padding: 4rem 0 3rem; ma
 .reflection-with-photos .reflection-photo-row + p { margin-top: 1.5rem; }
 .reflection-photo-row { display: grid; gap: 1.25rem; align-items: start; margin: 1.75rem 0; max-width: 760px; }
 .reflection-photo-row.single { grid-template-columns: minmax(0, 1fr); max-width: 320px; margin-left: auto; margin-right: auto; text-align: center; }
-.reflection-photo-row.pair { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 500px; }
-.reflection-photo-row.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.reflection-photo-row.pair { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 500px; margin-left: auto; margin-right: auto; }
+.reflection-photo-row.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-left: auto; margin-right: auto; }
 .reflection-photo { min-width: 0; margin: 0; }
 .reflection-photo a { display: flex; align-items: center; justify-content: center; height: 190px; background: var(--white); border: 1px solid var(--border); padding: 0.4rem; }
 .reflection-photo img { width: auto; height: auto; max-width: 100%; max-height: 175px; object-fit: contain; }
